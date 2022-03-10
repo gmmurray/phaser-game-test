@@ -18,6 +18,7 @@ export class LevelScene extends Scene {
   levelNumber = 0;
   startingCoordinates = { x: 0, y: 0 };
   mapDefinition = null;
+  dialog = null;
 
   setMap = () => {
     const addedMap = this.make.tilemap({ key: this.mapDefinition.key });
@@ -38,7 +39,7 @@ export class LevelScene extends Scene {
   setPlayerSprite = () => {
     this.playerSprite = this.add
       .sprite(0, 0, playerSpriteDefinition.key)
-      .setScale(SCALE);
+      .setScale(SCALE - 1);
     this.addPlayerCharacter();
   };
 
