@@ -53,7 +53,9 @@ export class LevelScene extends Scene {
   };
 
   setObjects = () => {
-    const data = this.map.getLayer(this.mapDefinition.objectLayer).data;
+    const data = this.map.getLayer(this.mapDefinition.objectLayer)?.data;
+
+    if (!data) return;
 
     data.forEach((d) => {
       d.forEach((t) => {

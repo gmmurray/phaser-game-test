@@ -2,8 +2,8 @@ import { getSpriteSource } from "../helpers/getSource";
 
 export const playerSprite = {
   key: "player",
-  source: getSpriteSource("greg_spritesheet.png"),
-  frameWidth: 64,
-  frameHeight: 64,
+  source: getSpriteSource("player_spritesheet.png"),
+  frameWidth: 32,
+  frameHeight: 32,
   walkingAnimationMapping: 0,
 };
